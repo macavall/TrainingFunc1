@@ -9,10 +9,12 @@ internal class Program
 
         builder.ConfigureFunctionsWebApplication();
 
+        #region AppInsights
         // Application Insights isn't enabled by default. See https://aka.ms/AAt8mw4.
         // builder.Services
         //     .AddApplicationInsightsTelemetryWorkerService()
         //     .ConfigureFunctionsApplicationInsights();
+        #endregion
 
         builder.Build().Run();
     }
